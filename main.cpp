@@ -9,12 +9,12 @@ int main() {
 	std::vector<Birb> bibbs;
 	std::vector<Flower> floors;
 
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 40; i++) {
 		int birbColor[] = { rand() % 255, rand() % 255, rand() % 255 }; //set up an array of colors to make your birbs WHATEVER COLOR!
 
 		bibbs.push_back(Birb(rand() % 800, rand() % 800, birbColor)); //instantiate a birb in a random spot
 	}
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 40; i++) {
 		int flowerColor[] = { rand() % 255, rand() % 255, rand() % 255 }; //set up an array of colors to make your birbs WHATEVER COLOR!
 
 		floors.push_back(Flower(rand() % 800, 400 + rand() % 400, flowerColor)); //instantiate a birb in a random spot
