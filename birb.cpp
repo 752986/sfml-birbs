@@ -1,7 +1,7 @@
 #include"birb.h"
 
 //function definition for constructor
-birb::birb(int x, int y, int c[3]) {
+Birb::Birb(int x, int y, int c[3]) {
 	xpos = x;
 	ypos = y;
 	color[0] = c[0]; //if our array was any longer I would have used a for loop here :)
@@ -11,7 +11,8 @@ birb::birb(int x, int y, int c[3]) {
 }
 
 //function definition for draw
-void birb::draw(sf::RenderWindow& window) {
+void Birb::draw(sf::RenderWindow& window) {
+	ypos += 1;
 
 	//leggies
 	feets.setPosition(xpos + 10, ypos + 35);
@@ -44,6 +45,6 @@ void birb::draw(sf::RenderWindow& window) {
 
 }
 
-void birb::fly() {
-	ypos += 1;
+void Birb::fly() {
+	ypos -= 25;
 }

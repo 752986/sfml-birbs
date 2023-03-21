@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 
 //class definition for birb
-class birb {
+class Birb {
 
 private: //private stuff can only be seen/used by fellow class members
 
@@ -19,7 +19,7 @@ private: //private stuff can only be seen/used by fellow class members
 public: //public stuff can be seen/used by errbody in the clurb
 
 	//you *can* have the whole definitions here, but its best to have just the declarations unless they are super short
-	birb(int x, int y, int c[3]); //parameterized constructor
+	Birb(int x, int y, int c[3]); //parameterized constructor
 	void draw(sf::RenderWindow& window);
 	void fly();
 
